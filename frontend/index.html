@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your documents into summaries, quizzes, reports and study questions.">
+    <title>TransformAI | AI Workspace</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="/" class="brand">
+            <span class="brand-symbol">✦</span>
+            <span>Transform<span class="brand-highlight">AI</span></span>
+        </a>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="sidebar-nav">
+            <a href="#source" class="nav-item active">
+                <span class="nav-icon">▤</span>
+                <span>Content Studio</span>
+            </a>
+
+            <a href="#transform" class="nav-item">
+                <span class="nav-icon">✧</span>
+                <span>Transform Content</span>
+            </a>
+
+            <a href="#result-area" class="nav-item">
+                <span class="nav-icon">▧</span>
+                <span>Generated Result</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-tip">
+                <div class="tip-icon">✦</div>
+                <strong>Make learning easier</strong>
+                <p>Turn your study material into clear, useful learning content.</p>
+            </div>
+
+            <div class="sidebar-footer">
+                <span class="status-dot"></span>
+                Demo workspace
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+            <div>
+                <span class="topbar-label">AI CONTENT WORKSPACE</span>
+                <h2>Content Studio</h2>
+            </div>
+
+            <div class="topbar-badge">
+                <span>✦</span> AI Powered
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-tag">YOUR IDEAS, REIMAGINED</div>
+
+                <h1>Transform your content.<br>
+                    <span>Unlock new possibilities.</span>
+                </h1>
+
+                <p>
+                    Upload your study material or paste your notes.
+                    Create summaries, quizzes, reports and revision
+                    questions in one simple workspace.
+                </p>
+            </div>
+
+            <div class="hero-art">
+                <div class="art-orbit orbit-one"></div>
+                <div class="art-orbit orbit-two"></div>
+                <div class="art-center">✦</div>
+                <div class="art-floating float-one">AI</div>
+                <div class="art-floating float-two">✧</div>
+                <div class="art-floating float-three">▤</div>
+            </div>
+        </section>
+
+        <!-- WORKSPACE -->
+        <section class="workspace">
+
+            <!-- SOURCE CONTENT -->
+            <div class="workspace-card source-card" id="source">
+
+                <div class="card-heading">
+                    <div>
+                        <span class="step-label">STEP 01</span>
+                        <h2>Add your content</h2>
+                        <p>Start with a document or your own text.</p>
+                    </div>
+
+                    <div class="heading-icon">▤</div>
+                </div>
+
+                <label class="upload-box" for="fileInput">
+                    <div class="upload-symbol">↑</div>
+
+                    <strong>Upload your document</strong>
+
+                    <span>Click to browse PDF or TXT files</span>
+
+                    <small>Supported files · Maximum 8 MB</small>
+
+                    <input
+                        id="fileInput"
+                        type="file"
+                        accept=".pdf,.txt"
+                    >
+                </label>
+
+                <div id="fileStatus" class="file-status" aria-live="polite">
+                    No document selected
+                </div>
+
+                <div class="divider">
+                    <span>OR PASTE YOUR TEXT</span>
+                </div>
+
+                <label class="field-label" for="sourceText">
+                    Your source text
+                </label>
+
+                <textarea
+                    id="sourceText"
+                    placeholder="Paste your notes, lesson, article or study material here..."
+                ></textarea>
+
+                <div class="text-footer">
+                    <span id="charCount">0 characters</span>
+                    <button id="clearBtn" class="text-button" type="button">
+                        Clear text
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- TRANSFORMATION OPTIONS -->
+            <div class="workspace-card result-card" id="result-area">
+
+                <div class="card-heading">
+                    <div>
+                        <span class="step-label">STEP 02</span>
+                        <h2>Choose your output</h2>
+                        <p>What would you like to create?</p>
+                    </div>
+
+                    <div class="heading-icon">✧</div>
+                </div>
+
+                <div class="output-grid">
+
+                    <label class="output-option selected">
+                        <input type="radio" name="output" value="summary" checked>
+
+                        <span class="option-top">
+                            <span class="option-icon summary-icon">▤</span>
+                            <span class="option-check">✓</span>
+                        </span>
+
+                        <strong>Summary</strong>
+                        <small>Understand the key ideas</small>
+                    </label>
+
+                    <label class="output-option">
+                        <input type="radio" name="output" value="quiz">
+
+                        <span class="option-top">
+                            <span class="option-icon quiz-icon">☑</span>
+                            <span class="option-check">✓</span>
+                        </span>
+
+                        <strong>Knowledge Quiz</strong>
+                        <small>Test what you have learned</small>
+                    </label>
+
+                    <label class="output-option">
+                        <input type="radio" name="output" value="report">
+
+                        <span class="option-top">
+                            <span class="option-icon report-icon">▧</span>
+                            <span class="option-check">✓</span>
+                        </span>
+
+                        <strong>Report</strong>
+                        <small>Create structured content</small>
+                    </label>
+
+                    <label class="output-option">
+                        <input type="radio" name="output" value="questions">
+
+                        <span class="option-top">
+                            <span class="option-icon questions-icon">❖</span>
+                            <span class="option-check">✓</span>
+                        </span>
+
+                        <strong>Study Q&A</strong>
+                        <small>Practice important questions</small>
+                    </label>
+
+                </div>
+
+                <label class="field-label" for="detailLevel">
+                    Output detail
+                </label>
+
+                <select id="detailLevel">
+                    <option value="short">Short and simple</option>
+                    <option value="medium" selected>Balanced detail</option>
+                    <option value="detailed">Detailed explanation</option>
+                </select>
+
+                <button id="generateBtn" class="generate-button" type="button">
+                    <span>✦</span>
+                    Generate content
+                    <span class="button-arrow">→</span>
+                </button>
+
+                <div class="privacy-note">
+                    <span class="privacy-icon">ⓘ</span>
+                    <p>
+                        Demo mode uses sample transformation logic.
+                        When an AI service is enabled, content may be sent
+                        to the configured provider. Avoid confidential
+                        or personal information.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RESULT AREA -->
+        <section class="workspace-card result-card" id="result">
+
+            <div class="card-heading result-heading">
+                <div>
+                    <span class="step-label">STEP 03</span>
+                    <h2>Your generated content</h2>
+                    <p>Your transformed content will appear below.</p>
+                </div>
+
+                <button
+                    id="downloadBtn"
+                    class="download-button"
+                    type="button"
+                    disabled
+                >
+                    ↓ Download .txt
+                </button>
+            </div>
+
+            <div id="result" class="result-content" aria-live="polite">
+
+                <div class="empty-state">
+                    <div class="empty-symbol">✦</div>
+
+                    <h3>Ready to transform</h3>
+
+                    <p>
+                        Add your source material, choose a transformation
+                        and click Generate content to get started.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="message" class="message" role="status"></div>
+
+        <footer class="page-footer">
+            <span>✦ TransformAI</span>
+            <span>CDS208 · Emerging Tools and Applications</span>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

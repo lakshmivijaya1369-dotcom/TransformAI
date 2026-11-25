@@ -1,0 +1,9 @@
+Introduction to Artificial Intelligence
+
+Artificial Intelligence (AI) is a field of computer science focused on creating systems that can perform tasks that usually require human intelligence. These tasks include learning, reasoning, recognizing patterns, understanding language, and making decisions.
+
+Machine learning is a branch of AI in which computer systems learn patterns from data. Instead of being programmed with every rule, a machine-learning model uses examples to improve its performance on a task. Deep learning is a specialized area of machine learning that uses multi-layered neural networks.
+
+Generative AI refers to systems that can create new content, such as text, images, audio, or code, based on patterns learned from training data. Large language models are generative AI systems designed to understand and produce human language. Prompt engineering is the practice of writing clear instructions and providing useful context so that an AI model can produce a more relevant response.
+
+AI systems can support education, healthcare, accessibility, research, and business processes. However, AI outputs may contain errors or bias. Users should verify important information, protect private data, and use AI responsibly.
